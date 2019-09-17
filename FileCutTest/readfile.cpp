@@ -138,8 +138,9 @@ bool FileEncryption(fstring fsSrcPath, fstring fsDesPath)
 			Sleep(500);
 		}
 
-
-		thread t(foo, count, dLen, pFileBlock, false);
+		// true£¨º”√‹
+		// false£¨Ω‚√‹
+		thread t(foo, count, dLen, pFileBlock, true);
 		t.detach();
 		count++;
 
